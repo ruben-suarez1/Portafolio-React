@@ -72,6 +72,9 @@
     }
 
     /* Show Menu */
+    .show-menu {
+        bottom: 0;
+    }
 
     .nav__list {
         display: grid;
@@ -96,6 +99,11 @@
         color: var(--title-color-dark);
     }
 
+    .nav__toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
     .nav__icon,
     .nav__close,
     .nav__toggle {
@@ -112,4 +120,12 @@
     .nav__list {
         column-gap: 0;
     }
+}
+
+.text-logo-before::before {
+    content: "< ";
+}
+
+.text-logo-after::before {
+    content: " />";
 }
